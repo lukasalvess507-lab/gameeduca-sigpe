@@ -1,67 +1,59 @@
-/* TOPO AJUSTADO (PROFISSIONAL) */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+}
+
+/* ================= TOPO ================= */
 .topo {
   position: relative;
   background: linear-gradient(90deg, #4CAF50, #2196F3);
-  height: 100px; /* altura controlada */
+  height: 120px; /* leve ajuste */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* logo prefeitura (esquerda) */
+/* logo prefeitura */
 .logo-prefeitura {
   position: absolute;
   top: 10px;
   left: 15px;
+  text-align: center;
 }
 
 .logo-prefeitura img {
-  width: 50px;
+  width: 65px;
 }
 
-/* bloco da logo principal */
+.logo-prefeitura p {
+  font-size: 10px;
+  color: white;
+  margin: 2px 0 0 0;
+}
+
+/* logo principal */
 .logo-principal {
   text-align: center;
-  margin-top: -5px;
 }
 
-/* logo maior e centralizada */
 .logo-principal img {
   width: 280px;
-  display: block;
-  margin: 0 auto;
 }
 
-/* texto colado na logo */
 .logo-principal p {
   margin: 2px 0 0 0;
   font-size: 13px;
-  color: #333; /* COR ESCURA PARA APARECER */
+  color: #222; /* corrigido */
+  font-weight: 500;
 }
 
-/* CONTEÚDO */
+/* ================= CONTEÚDO ================= */
 .container {
-  position: relative;
   background: url('https://images.unsplash.com/photo-1588072432836-e10032774350') no-repeat center;
   background-size: cover;
-  padding: 50px 20px;
+  padding: 60px 20px;
   text-align: center;
-}
-
-/* camada branca suave */
-.container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255,255,255,0.85);
-}
-
-/* conteúdo na frente */
-.container * {
-  position: relative;
 }
 
 /* título */
@@ -75,7 +67,7 @@ p {
   color: #555;
 }
 
-/* ÁREA DOS BOTÕES (CARDS) */
+/* ================= BOTÕES ================= */
 .botoes {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -83,7 +75,7 @@ p {
   margin-top: 30px;
 }
 
-/* CARD BOTÃO */
+/* card botão */
 .card-btn {
   background: white;
   border-radius: 15px;
@@ -101,14 +93,14 @@ p {
   margin-bottom: 10px;
 }
 
-/* texto */
+/* texto botão */
 .card-btn p {
   margin: 0;
   font-weight: bold;
   color: #333;
 }
 
-/* hover (efeito moderno) */
+/* hover */
 .card-btn:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.15);
