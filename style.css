@@ -58,11 +58,11 @@ button {
   left: 15px;
 }
 
-.logo-principal h1 {
-  margin: 0;
-  font-size: 28px;
-}
-
 .logo-principal p {
   margin: 5px 0;
+}
+
+.logo-principal img {
+  display: block;
+  margin: 0 auto;
 }
