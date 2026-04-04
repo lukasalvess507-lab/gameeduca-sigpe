@@ -17,9 +17,8 @@ body {
 /* logo prefeitura */
 .logo-prefeitura {
     position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 20px; /* 👈 desce um pouco */
+    left: 15px;
 }
 
 .logo-prefeitura img {
