@@ -40,11 +40,24 @@ body {
 
 /* 🔥 AJUSTE AQUI — TEXTO SOBE PRA PERTO DA LOGO */
 .logo-principal p {
-  margin: -8px 0 0 0; /* sobe o texto */
+  margin: 0;
+  text-align: center;
+}
+
+/* frase principal */
+.subtitulo {
   font-size: 14px;
   color: white;
   font-weight: bold;
+  margin-top: -8px; /* aproxima da logo */
   text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+}
+
+/* secretaria */
+.secretaria {
+  font-size: 12px;
+  color: #e0f2f1;
+  margin-top: 2px;
 }
 
 /* ================= CONTEÚDO ================= */
