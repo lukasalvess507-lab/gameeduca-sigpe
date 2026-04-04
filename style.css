@@ -170,3 +170,15 @@ p {
 .logo-principal .secretaria {
     margin-top: 2px !important;
 }
+
+/* 🔥 SOBE A FRASE ATÉ A LOGO (SEM MEXER NA LOGO) */
+
+.logo-principal .subtitulo {
+    position: relative;
+    top: -40px; /* 🔥 sobe forte */
+}
+
+.logo-principal .secretaria {
+    position: relative;
+    top: -38px;
+}
