@@ -8,7 +8,7 @@ body {
 .topo {
   position: relative;
   background: linear-gradient(90deg, #4CAF50, #2196F3);
-  height: 120px; /* leve ajuste */
+  height: 130px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,14 +38,15 @@ body {
 }
 
 .logo-principal img {
-  width: 280px;
+  width: 300px;
 }
 
 .logo-principal p {
-  margin: 2px 0 0 0;
-  font-size: 13px;
-  color: #222; /* corrigido */
-  font-weight: 500;
+  margin-top: 5px;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.4);
 }
 
 /* ================= CONTEÚDO ================= */
@@ -58,21 +59,24 @@ body {
 
 /* título */
 h2 {
+  color: #222;
+  font-weight: bold;
   margin-top: 10px;
-  color: #333;
 }
 
 /* texto */
 p {
-  color: #555;
+  color: #333;
+  font-weight: 500;
 }
 
 /* ================= BOTÕES ================= */
 .botoes {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  display: flex;
+  flex-direction: column; /* deixa vertical */
   gap: 15px;
   margin-top: 30px;
+  align-items: center;
 }
 
 /* card botão */
@@ -80,6 +84,8 @@ p {
   background: white;
   border-radius: 15px;
   padding: 20px;
+  width: 80%;
+  max-width: 300px;
   text-align: center;
   cursor: pointer;
   transition: all 0.3s ease;
