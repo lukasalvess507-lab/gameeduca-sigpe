@@ -51,7 +51,7 @@ body {
   font-size: 14px;
   color: white;
   font-weight: bold;
-  margin-top: -10px;
+  margin-top: -25px;
   text-shadow: 0 2px 4px rgba(0,0,0,0.4);
 }
 
@@ -147,4 +147,12 @@ p {
 /* clique */
 .card-btn:active {
   transform: scale(0.95);
+}
+
+.logo-principal .subtitulo {
+  color: white !important;
+}
+
+.logo-principal .secretaria {
+  color: #e0f2f1 !important;
 }
