@@ -190,10 +190,10 @@ p {
 /* 🔥 SOBE MAIS A FRASE */
 .logo-principal .subtitulo {
     position: relative;
-    top: -8px;
+    top: 5px;
 }
 
 .logo-principal .secretaria {
     position: relative;
-    top: -6px;
+    top: 2px;
 }
