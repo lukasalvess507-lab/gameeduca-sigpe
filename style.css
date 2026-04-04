@@ -1,16 +1,11 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f5f7fb;
-}
-
-/* TOPO */
+/* TOPO AJUSTADO (PROFISSIONAL) */
 .topo {
   position: relative;
   background: linear-gradient(90deg, #4CAF50, #2196F3);
-  padding: 5px 10px; /* menor altura */
-  text-align: center;
-  color: white;
+  height: 100px; /* altura controlada */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* logo prefeitura (esquerda) */
@@ -24,17 +19,24 @@ body {
   width: 50px;
 }
 
-/* logo principal */
+/* bloco da logo principal */
+.logo-principal {
+  text-align: center;
+  margin-top: -5px;
+}
+
+/* logo maior e centralizada */
 .logo-principal img {
-  width: 300px;
+  width: 280px;
   display: block;
   margin: 0 auto;
 }
 
-/* texto abaixo da logo */
+/* texto colado na logo */
 .logo-principal p {
-  margin: 5px 0 10px 0; /* sobe o texto */
-  font-size: 7px;
+  margin: 2px 0 0 0;
+  font-size: 13px;
+  color: rgba(255,255,255,0.9);
 }
 
 /* CONTEÚDO */
