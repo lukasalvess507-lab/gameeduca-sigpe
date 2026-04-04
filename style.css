@@ -156,3 +156,17 @@ p {
 .logo-principal .secretaria {
   color: #e0f2f1 !important;
 }
+
+/* 🔥 SOBE SOMENTE A FRASE (SEM MEXER NA LOGO) */
+
+.logo-principal img {
+    margin-bottom: -20px;
+}
+
+.logo-principal .subtitulo {
+    margin-top: 0px !important;
+}
+
+.logo-principal .secretaria {
+    margin-top: 2px !important;
+}
