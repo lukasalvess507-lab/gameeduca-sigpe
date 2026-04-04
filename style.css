@@ -29,16 +29,18 @@ body {
 /* logo principal */
 .logo-principal {
   text-align: center;
+  position: relative;
+  z-index: 2; /* 🔥 garante que fique na frente */
 }
 
-/* logo imagem */
+/* imagem logo */
 .logo-principal img {
   width: 300px;
   display: block;
   margin: 0 auto;
 }
 
-/* 🔥 AJUSTE AQUI — TEXTO SOBE PRA PERTO DA LOGO */
+/* textos da logo */
 .logo-principal p {
   margin: 0;
   text-align: center;
@@ -49,7 +51,7 @@ body {
   font-size: 14px;
   color: white;
   font-weight: bold;
-  margin-top: -8px; /* aproxima da logo */
+  margin-top: -10px;
   text-shadow: 0 2px 4px rgba(0,0,0,0.4);
 }
 
@@ -69,7 +71,7 @@ body {
   text-align: center;
 }
 
-/* camada branca suave (esmaecer fundo) */
+/* camada branca suave */
 .container::before {
   content: "";
   position: absolute;
@@ -79,9 +81,10 @@ body {
   height: 100%;
   background: rgba(255,255,255,0.65);
   backdrop-filter: blur(2px);
+  z-index: 0; /* 🔥 corrigido */
 }
 
-/* garante conteúdo na frente */
+/* conteúdo acima da camada */
 .container * {
   position: relative;
 }
@@ -108,7 +111,7 @@ p {
   align-items: center;
 }
 
-/* card botão */
+/* botão */
 .card-btn {
   background: white;
   border-radius: 15px;
