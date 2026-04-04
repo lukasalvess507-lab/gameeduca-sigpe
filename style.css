@@ -156,32 +156,6 @@ p {
   color: #e0f2f1 !important;
 }
 
-/* 🔥 SOBE SOMENTE A FRASE (SEM MEXER NA LOGO) */
-
-.logo-principal img {
-    margin-bottom: -20px;
-}
-
-.logo-principal .subtitulo {
-    margin-top: 0px !important;
-}
-
-.logo-principal .secretaria {
-    margin-top: 2px !important;
-}
-
-/* 🔥 SOBE A FRASE ATÉ A LOGO (SEM MEXER NA LOGO) */
-
-.logo-principal .subtitulo {
-    position: relative;
-    top: -40px; /* 🔥 sobe forte */
-}
-
-.logo-principal .secretaria {
-    position: relative;
-    top: -38px;
-}
-
 /* 🔥 LIBERA TEXTO PRA SUBIR ALÉM DO TOPO */
 .top {
     overflow: visible !important;
