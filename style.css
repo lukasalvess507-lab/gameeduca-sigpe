@@ -68,13 +68,13 @@ button:active {
 .logo-principal img {
   display: block;
   margin: -10px auto 0 auto;
-  width: 120px;
+  width: 220px;
 }
 
 .logo-prefeitura {
   position: absolute;
   top: 10px;
-  left: 15px;
+  left: 35px;
 }
 
 .logo-principal p {
