@@ -8,7 +8,7 @@ body {
 .topo {
   position: relative;
   background: linear-gradient(90deg, #4CAF50, #2196F3);
-  padding: 5px 20px; /* menor altura */
+  padding: 5px 10px; /* menor altura */
   text-align: center;
   color: white;
 }
@@ -34,7 +34,7 @@ body {
 /* texto abaixo da logo */
 .logo-principal p {
   margin: 5px 0 10px 0; /* sobe o texto */
-  font-size: 14px;
+  font-size: 7px;
 }
 
 /* CONTEÚDO */
