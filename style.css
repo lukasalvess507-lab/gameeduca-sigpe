@@ -36,7 +36,7 @@
 .logo-principal p {
   margin: 2px 0 0 0;
   font-size: 13px;
-  color: rgba(255,255,255,0.9);
+  color: #333; /* COR ESCURA PARA APARECER */
 }
 
 /* CONTEÚDO */
