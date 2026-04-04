@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+}
+
+/* TOPO */
+header {
+  background: linear-gradient(90deg, #4CAF50, #2196F3);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.container {
+  padding: 30px;
+  text-align: center;
+}
+
+/* IMAGEM */
+.hero img {
+  width: 250px;
+  margin-top: 20px;
+}
+
+/* TEXTO */
+h2 {
+  color: #333;
+}
+
+p {
+  color: #555;
+}
+
+/* BOTÃO FUTURO */
+button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #4CAF50;
+  color: white;
+  font-size: 16px;
+}
