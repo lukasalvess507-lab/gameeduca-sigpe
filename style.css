@@ -5,104 +5,95 @@ body {
 }
 
 /* TOPO */
-header {
+.topo {
+  position: relative;
   background: linear-gradient(90deg, #4CAF50, #2196F3);
+  padding: 15px 20px;
+  text-align: center;
   color: white;
-  padding: 10px 20px;
-  text-align: center;
 }
 
-/* CONTEÚDO PRINCIPAL */
+/* logo prefeitura (esquerda) */
+.logo-prefeitura {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+
+.logo-prefeitura img {
+  width: 50px;
+}
+
+/* logo principal */
+.logo-principal img {
+  width: 180px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* texto abaixo da logo */
+.logo-principal p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+/* CONTEÚDO */
 .container {
-  padding: 30px;
+  padding: 30px 20px;
   text-align: center;
 }
 
-/* IMAGEM */
-.hero img {
-  width: 250px;
-  margin-top: 20px;
-}
-
-/* TEXTO */
+/* título */
 h2 {
+  margin-top: 10px;
   color: #333;
 }
 
+/* texto */
 p {
   color: #555;
 }
 
-/* BOTÃO FUTURO */
-button {
-  margin: 10px;
-  padding: 14px 25px;
-  border: none;
-  border-radius: 30px;
-  background: linear-gradient(135deg, #4CAF50, #2E7D32);
-  color: white;
-  font-size: 16px;
+/* ÁREA DOS BOTÕES (CARDS) */
+.botoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 15px;
+  margin-top: 30px;
+}
+
+/* CARD BOTÃO */
+.card-btn {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
   cursor: pointer;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
-/* efeito ao passar o dedo */
-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-}
-
-/* efeito ao clicar */
-button:active {
-  transform: scale(0.95);
-}
-
-.topo {
-  position: relative;
-  background: linear-gradient(90deg, #4CAF50, #2196F3);
-  padding: 10px 20px;
-  text-align: center;
-  color: white;
-}
-
-.logo-principal img {
+/* ícone */
+.card-btn span {
+  font-size: 30px;
   display: block;
-  margin: -10px auto 0 auto;
-  width: 220px;
+  margin-bottom: 10px;
 }
 
-.logo-prefeitura {
-  position: absolute;
-  top: 25px;
-  left: 35px;
+/* texto */
+.card-btn p {
+  margin: 0;
+  font-weight: bold;
+  color: #333;
 }
 
-.logo-principal p {
-  margin: 25px 0;
+/* hover (efeito moderno) */
+.card-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
-.container {
-  position: relative;
-  background: url('https://images.unsplash.com/photo-1588072432836-e10032774350') no-repeat center;
-  background-size: cover;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-/* camada branca transparente para não atrapalhar leitura */
-.container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255,255,255,0.85);
-  z-index: 0;
-}
-
-/* garante que o conteúdo fique na frente */
-.container * {
-  position: relative;
-  z-index: 1;
+/* clique */
+.card-btn:active {
+  transform: scale(0.95);
 }
