@@ -47,9 +47,15 @@ button {
 .topo {
   position: relative;
   background: linear-gradient(90deg, #4CAF50, #2196F3);
-  padding: 30px 20px;
+  padding: 10px 20px;
   text-align: center;
   color: white;
+}
+
+.logo-principal img {
+  display: block;
+  margin: -10px auto 0 auto;
+  width: 180px;
 }
 
 .logo-prefeitura {
@@ -62,7 +68,3 @@ button {
   margin: 5px 0;
 }
 
-.logo-principal img {
-  display: block;
-  margin: 0 auto;
-}
