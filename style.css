@@ -286,18 +286,10 @@ padding-top: 50px;
 }
 
 body {
-  opacity: 1;
-  transition: opacity 0.25s ease;
+  transform: translateX(0);
+  transition: transform 0.15s ease;
 }
 
-body.fade-out {
-  opacity: 0.4;
-}
-
-body {
-  transition: opacity 0.2s ease;
-}
-
-body.fade-out {
-  opacity: 0;
+body.slide-out {
+  transform: translateX(-100%);
 }
