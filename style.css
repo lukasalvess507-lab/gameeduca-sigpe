@@ -309,3 +309,22 @@ body.fade-out {
 a {
   -webkit-tap-highlight-color: transparent;
 }
+
+/* BOTÃO TUTORIAIS DESTACADO */
+.destaque {
+  background: #4CAF50; /* verde */
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* ícone dentro do botão */
+.destaque img,
+.destaque span {
+  filter: brightness(0) invert(1);
+}
+
+/* efeito ao clicar */
+.destaque:active {
+  transform: scale(0.98);
+}
