@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anos Finais - GameEduca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<a href="index.html" class="btn-voltar">voltar</a>
+    
+<div class="container">
+    <h2>Jogos - Anos Finais</h2>
+    <p>Escolha um jogo para jogar</p>
+
+    <div class="botoes">
+
+        <a href="https://kahoot.com/pt-BR/" target="_blank" class="card-btn">
+    <img src="https://www.google.com/s2/favicons?sz=64&domain=kahoot.com" width="40">
+    <p>kahoot</p>
+</a>
+
+        <a href="https://wordwall.net/pt" target="_blank" class="card-btn">
+    <img src="logos/wordwall.png" width="40">
+<p>Wordwall</p>
+</a>
+
+  <a href="https://www.digipuzzle.net/pt/jogoseducativos/" target="_blank" class="card-btn">
+    <img src="https://www.digipuzzle.net/favicon.ico" width="40">
+    <p>DigiPuzzle</p>
+</a>      
+
+        <a href="https://edugames.uz/" target="_blank" class="card-btn">
+    <img src="https://edugames.uz/favicon.ico" width="40">
+<p>EduGames UZ</p>
+</a>
+
+        <a href="https://atividade.digital/ed/views/" target="_blank" class="card-btn">
+    <img src="https://atividade.digital/favicon.ico" width="40">
+<p>Atividade.Digital</p>
+</a>
+
+<a href="https://hvirtua.com/jogoseducativos/" target="_blank" class="card-btn">
+    <img src="logos/hvirtua.png" width="40">
+<p>HVirtua</p>
+</a>
+        
+        <a href="tutoriais-finais.html" class="card-btn destaque">
+  <span>🎥</span>
+  <p>Tutoriais</p>
+</a>
+
+    </div>
+
+</div>
+
+<script>
+  document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function(e) {
+      if (this.getAttribute("href").includes(".html")) {
+        e.preventDefault();
+        document.body.classList.add("fade-out");
+        setTimeout(() => {
+          window.location.href = this.href;
+        }, 60);
+      }
+    });
+  });
+</script>
+    
+</body>
+</html>
