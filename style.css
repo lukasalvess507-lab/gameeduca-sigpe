@@ -113,14 +113,16 @@ p {
 /* botão */
 .card-btn {
   background: white;
-  border-radius: 15px;
-  padding: 20px;
-  width: 80%;
-  max-width: 300px;
+  border-radius: 18px;
+
+  padding: 26px; /* AUMENTA AQUI */
+  width: 90%; /* AUMENTA AQUI */
+  max-width: 340px; /* AUMENTA AQUI */
+
   text-align: center;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: all 0.2s ease;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
 }
 
 /* ícone */
