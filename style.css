@@ -354,3 +354,15 @@ a {
     box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
   }
 }
+
+@media (max-width: 600px) {
+
+    .logo-prefeitura {
+        width: 60px;
+    }
+
+    .logo-gameeduca {
+        width: 80px;
+    }
+
+}
