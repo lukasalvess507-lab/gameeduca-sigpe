@@ -171,3 +171,26 @@ p {
     position: relative;
     top: 2px;
 }
+
+.botoes a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-btn {
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* hover */
+.card-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* clique */
+.card-btn:active {
+    transform: scale(0.95);
+}
