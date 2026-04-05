@@ -293,3 +293,11 @@ body {
 body.fade-out {
   opacity: 0.4;
 }
+
+body {
+  transition: opacity 0.2s ease;
+}
+
+body.fade-out {
+  opacity: 0;
+}
