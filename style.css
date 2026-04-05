@@ -284,3 +284,12 @@ padding-top: 50px;
   font-size: 14px;
   z-index: 999;
 }
+
+body {
+  opacity: 1;
+  transition: opacity 0.25s ease;
+}
+
+body.fade-out {
+  opacity: 0.4;
+}
