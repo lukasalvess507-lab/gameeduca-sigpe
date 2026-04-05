@@ -46,10 +46,10 @@
     link.addEventListener("click", function(e) {
       if (this.getAttribute("href").includes(".html")) {
         e.preventDefault();
-        document.body.classList.add("slide-out");
+        document.body.classList.add("fade-out");
         setTimeout(() => {
           window.location.href = this.href;
-        }, 200);
+        }, 120);
       }
     });
   });
