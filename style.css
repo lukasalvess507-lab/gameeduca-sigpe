@@ -289,7 +289,7 @@ padding-top: 50px;
 
 body {
   opacity: 1;
-  transition: opacity 0.08s ease;
+  transition: opacity 0.02s ease;
 }
 
 body.fade-out {
