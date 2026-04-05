@@ -267,3 +267,16 @@ p {
 .logo-prefeitura {
     margin-bottom: 5px;
 }
+
+.btn-voltar {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background: #4CAF50;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  z-index: 999;
+}
