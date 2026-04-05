@@ -247,20 +247,21 @@ p {
 @media (max-width: 600px) {
 
     .topo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    text-align: center;
+}
 
-    .logo-prefeitura img {
-        width: 60px;
-        margin-bottom: 5px;
-    }
+.logo-prefeitura img {
+    width: 50px;
+}
 
-    .logo-principal img {
-        width: 150px;
-    }
-
+.logo-principal img {
+    width: 130px;
+}
 }
 
 .logo-prefeitura {
