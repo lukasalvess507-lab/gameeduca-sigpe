@@ -18,11 +18,11 @@ body {
 .logo-prefeitura {
     position: absolute;
     top: 20px; /* 👈 desce um pouco */
-    left: 15px;
+    left: 25px;
 }
 
 .logo-prefeitura img {
-  width: 80px;
+  width: 90px;
 }
 
 /* logo principal */
