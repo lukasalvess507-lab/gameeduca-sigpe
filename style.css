@@ -103,11 +103,16 @@ p {
 
 /* ================= BOTÕES ================= */
 .botoes {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 15px;
-  margin-top: 30px;
-  align-items: center;
+  justify-items: center;
+}
+
+@media (max-width: 600px) {
+  .botoes {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* botão */
