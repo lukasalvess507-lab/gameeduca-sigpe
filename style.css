@@ -53,7 +53,8 @@ body {
 .container {
   min-height: 100vh;
   background: url('logos/fundo-tech.png') no-repeat center;
-background-size: cover;
+background-size: 120%;
+background-position: center bottom;
   padding: 60px 20px;
   text-align: center;
 
@@ -62,13 +63,20 @@ background-size: cover;
   align-items: center;
 }
 
+@media (max-width: 600px) {
+  .container {
+    background-size: 140%;
+    background-position: center bottom;
+  }
+}
+
 /* camada branca */
 .container::before {
   content: "";
   position: absolute;
   inset: 0;
   background: rgba(255,255,255,0.40);
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(4px);
 }
 
 .container * {
