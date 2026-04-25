@@ -107,11 +107,14 @@ p {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   justify-items: center;
+
+  padding: 0 15px; /* 👈 ISSO AQUI RESOLVE */
 }
 
 @media (max-width: 600px) {
   .botoes {
     grid-template-columns: repeat(2, 1fr);
+    padding: 0 10px; /* menor no celular */
   }
 }
 
