@@ -220,3 +220,36 @@ p {
     transform: scale(1);
   }
 }
+
+/* ===== BOTÕES DA HOME (4 PRINCIPAIS) ===== */
+.botoes-home {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* aumentar tamanho dos botões só na home */
+.botoes-home .card-btn {
+  max-width: 260px;
+  height: 140px;
+}
+
+/* aumentar ícones só na home */
+.botoes-home .card-btn span,
+.botoes-home .card-btn img {
+  font-size: 40px;
+  width: 40px;
+}
+
+@media (max-width: 600px) {
+  .botoes-home {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+.botoes-home {
+  gap: 25px;
+}
+
+.botoes-home .card-btn {
+  margin: auto;
+}
