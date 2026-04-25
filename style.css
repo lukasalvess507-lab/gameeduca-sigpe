@@ -300,3 +300,38 @@ p {
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
+@media (max-width: 600px) {
+
+  /* diminui e organiza o topo */
+  .topo {
+    height: auto;
+    padding: 10px 5px;
+  }
+
+  /* logo da prefeitura - continua na esquerda, mas menor */
+  .logo-prefeitura {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  .logo-prefeitura img {
+    width: 55px;
+  }
+
+  /* logo principal central - reduz tamanho */
+  .logo-principal img {
+    width: 180px;
+  }
+
+  /* evita sobreposição de textos */
+  .subtitulo {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .secretaria {
+    font-size: 10px;
+  }
+
+}
