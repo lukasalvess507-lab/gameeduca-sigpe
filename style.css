@@ -268,5 +268,20 @@ p {
   line-height: 1.4;
 }
 
+.card-btn {
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: all 0.25s ease;
+}
 
+.card-btn:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+.card-btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
 
