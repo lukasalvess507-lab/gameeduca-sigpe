@@ -375,10 +375,16 @@ a {
 
 }
 
-/* CENTRALIZAR BOTÃO TUTORIAIS */
-.card-btn:last-child {
+/* CENTRALIZAR APENAS BOTÃO DESTAQUE (Tutoriais) */
+.card-btn.destaque {
   grid-column: span 3;
   justify-self: center;
+}
+
+@media (max-width: 600px) {
+  .card-btn.destaque {
+    grid-column: span 2;
+  }
 }
 
 /* AJUSTE PARA CELULAR */
