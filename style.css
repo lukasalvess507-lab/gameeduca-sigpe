@@ -154,7 +154,7 @@ p {
 
 /* botão tutorial */
 .card-btn.destaque {
-  background: #4CAF50;
+  background: #FF6BOO;
   color: white;
 
   grid-column: span 3;
@@ -184,4 +184,18 @@ p {
 .botoes a {
   text-decoration: none;
   color: inherit;
+}
+
+/* BOTÃO VOLTAR */
+.btn-voltar {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background: #4CAF50;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  z-index: 999;
 }
