@@ -1,3 +1,4 @@
+/* RESET */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -16,9 +17,9 @@ body {
 
 /* logo prefeitura */
 .logo-prefeitura {
-    position: absolute;
-    top: 20px; /* 👈 desce um pouco */
-    left: 25px;
+  position: absolute;
+  top: 20px;
+  left: 25px;
 }
 
 .logo-prefeitura img {
@@ -28,77 +29,60 @@ body {
 /* logo principal */
 .logo-principal {
   text-align: center;
-  position: relative;
-  z-index: 2; /* 🔥 garante que fique na frente */
+  z-index: 2;
 }
 
-/* imagem logo */
 .logo-principal img {
   width: 300px;
-  display: block;
-  margin: 0 auto;
 }
 
-/* textos da logo */
-.logo-principal p {
-  margin: 0;
-  text-align: center;
-}
-
-/* frase principal */
+/* textos */
 .subtitulo {
   font-size: 14px;
   color: white;
   font-weight: bold;
-  margin-top: -25px;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+  margin-top: -20px;
 }
 
-/* secretaria */
 .secretaria {
   font-size: 12px;
   color: #e0f2f1;
-  margin-top: 2px;
 }
 
 /* ================= CONTEÚDO ================= */
 .container {
-  position: relative;
+  min-height: 100vh;
   background: url('https://images.unsplash.com/photo-1588072432836-e10032774350') no-repeat center;
   background-size: cover;
   padding: 60px 20px;
   text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* camada branca suave */
+/* camada branca */
 .container::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background: rgba(255,255,255,0.65);
   backdrop-filter: blur(2px);
-  z-index: 0; /* 🔥 corrigido */
 }
 
-/* conteúdo acima da camada */
 .container * {
   position: relative;
 }
 
-/* título */
+/* textos */
 h2 {
   color: #222;
-  font-weight: bold;
   margin-top: 10px;
 }
 
-/* texto */
 p {
   color: #333;
-  font-weight: 500;
 }
 
 /* ================= BOTÕES ================= */
@@ -107,14 +91,14 @@ p {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   justify-items: center;
-
-  padding: 0 15px; /* 👈 ISSO AQUI RESOLVE */
+  width: 100%;
+  max-width: 800px;
 }
 
+/* celular */
 @media (max-width: 600px) {
   .botoes {
     grid-template-columns: repeat(2, 1fr);
-    padding: 0 10px; /* menor no celular */
   }
 }
 
@@ -123,165 +107,67 @@ p {
   background: white;
   border-radius: 18px;
 
-  padding: 26px; /* AUMENTA AQUI */
-  width: 100%; /* AUMENTA AQUI */
-  max-width: 200px; /* AUMENTA AQUI */
+  width: 100%;
+  max-width: 200px;
+  height: 120px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   text-align: center;
   cursor: pointer;
-  transition: all 0.2s ease;
+
+  transition: 0.2s;
   box-shadow: 0 6px 14px rgba(0,0,0,0.1);
 }
 
-/* ícone */
-.card-btn span {
-  font-size: 30px;
-  display: block;
-  margin-bottom: 10px;
+/* celular */
+@media (max-width: 600px) {
+  .card-btn {
+    height: 110px;
+    max-width: 100%;
+  }
 }
 
-/* texto botão */
+/* ícone */
+.card-btn span,
+.card-btn img {
+  margin-bottom: 8px;
+}
+
+/* texto */
 .card-btn p {
   margin: 0;
   font-weight: bold;
-  color: #333;
 }
 
-/* hover */
+/* efeitos */
 .card-btn:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
-/* clique */
 .card-btn:active {
   transform: scale(0.95);
 }
 
-.logo-principal .subtitulo {
-  color: white !important;
+/* botão tutorial */
+.card-btn.destaque {
+  background: #4CAF50;
+  color: white;
+
+  grid-column: span 3;
 }
 
-.logo-principal .secretaria {
-  color: #e0f2f1 !important;
-}
-
-/* 🔥 LIBERA TEXTO PRA SUBIR ALÉM DO TOPO */
-.top {
-    overflow: visible !important;
-}
-
-/* 🔥 SOBE MAIS A FRASE */
-.logo-principal .subtitulo {
-    position: relative;
-    top: 1px;
-}
-
-.logo-principal .secretaria {
-    position: relative;
-    top: 2px;
-}
-
-.botoes a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.card-btn {
-    display: block;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-/* hover */
-.card-btn:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-}
-
-/* clique */
-.card-btn:active {
-    transform: scale(0.95);
-}
-
-.btn-voltar {
-    position: absolute;
-    top: 110px; /* ajusta conforme seu layout */
-    left: 20px;
-
-    padding: 6px 14px;
-    font-size: 13px;
-    border-radius: 20px;
-
-    background: rgba(255,255,255,0.7);
-    color: #333;
-    text-decoration: none;
-
-    backdrop-filter: blur(6px);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-
-    transition: all 0.3s ease;
-}
-
-.btn-voltar:hover {
-    background: white;
-    transform: translateY(-2px);
-}
-
+/* celular */
 @media (max-width: 600px) {
-
-    .container {
-        padding: 15px;
-    }
-
-    .card-btn {
-  width: 90%;
-  max-width: 320px;
-  padding: 22px;
-  font-size: 18px;
-  margin: 10px 0;
-  border-radius: 15px;
+  .card-btn.destaque {
+    grid-column: span 2;
+  }
 }
 
-}
-
-.container {
-    min-height: 100vh;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-padding-top: 50px;
-}
-
-@media (max-width: 600px) {
-
-    .topo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
-.logo-prefeitura img {
-    width: 50px;
-}
-
-.logo-principal img {
-    width: 130px;
-}
-}
-
-.logo-prefeitura {
-    margin-bottom: 5px;
-}
-
+/* voltar */
 .btn-voltar {
   position: fixed;
   top: 15px;
@@ -292,124 +178,10 @@ padding-top: 50px;
   border-radius: 10px;
   text-decoration: none;
   font-size: 14px;
-  z-index: 999;
 }
 
-body {
-  opacity: 1;
-  transition: opacity 0.02s ease;
-}
-
-body.fade-out {
-  opacity: 0;
-}
-
-.card-btn {
-  transition: transform 0.1s ease, box-shadow 0.1s ease;
-}
-
-/* efeito ao clicar */
-.card-btn:active {
-  transform: scale(0.95);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-}
-
-a {
-  -webkit-tap-highlight-color: transparent;
-}
-
-/* BOTÃO TUTORIAIS DESTACADO */
-.destaque {
-  background: #4CAF50; /* verde */
-  color: white;
-  transform: scale(1.05);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-}
-
-/* ícone dentro do botão */
-.destaque img,
-.destaque span {
-  filter: brightness(0) invert(1);
-}
-
-/* efeito ao clicar */
-.destaque:active {
-  transform: scale(0.98);
-}
-
-/* BOTÃO TUTORIAIS DESTACADO */
-.destaque {
-  background: #4CAF50;
-  color: white;
-  transform: scale(1.05);
-  box-shadow: 0 0 12px rgba(76, 175, 80, 0.6);
-
-  animation: pulsar 1.5s infinite;
-}
-
-/* animação leve */
-@keyframes pulsar {
-  0% {
-    transform: scale(1.05);
-    box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
-  }
-  50% {
-    transform: scale(1.08);
-    box-shadow: 0 0 18px rgba(76, 175, 80, 0.8);
-  }
-  100% {
-    transform: scale(1.05);
-    box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
-  }
-}
-
-@media (max-width: 600px) {
-
-    .logo-prefeitura {
-        width: 60px;
-    }
-
-    .logo-gameeduca {
-        width: 80px;
-    }
-
-}
-
-/* CENTRALIZAR APENAS BOTÃO DESTAQUE (Tutoriais) */
-.card-btn.destaque {
-  grid-column: span 3;
-  justify-self: center;
-}
-
-@media (max-width: 600px) {
-  .card-btn.destaque {
-    grid-column: span 2;
-  }
-}
-
-/* AJUSTE PARA CELULAR */
-@media (max-width: 600px) {
-  .card-btn:last-child {
-    grid-column: span 2;
-    justify-self: center;
-  }
-}
-
-/* PADRONIZAR TAMANHO DOS BOTÕES */
-.card-btn {
-  height: 120px; /* altura fixa */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-/* AJUSTE PARA CELULAR */
-@media (max-width: 600px) {
-  .card-btn {
-    height: 110px;
-  }
-}
-
-.card-btn {
-  align-items: center;
+/* links */
+.botoes a {
+  text-decoration: none;
+  color: inherit;
 }
