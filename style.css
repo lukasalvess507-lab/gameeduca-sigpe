@@ -223,7 +223,9 @@ p {
 
 /* ===== BOTÕES DA HOME (4 PRINCIPAIS) ===== */
 .botoes-home {
-  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  grid-template-columns: 1fr; /* 1 coluna */
+  gap: 20px;
 }
 
 /* aumentar tamanho dos botões só na home */
