@@ -253,3 +253,20 @@ p {
 .botoes-home .card-btn {
   margin: auto;
 }
+
+.frase-home {
+  margin-top: 40px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+  text-align: center;
+  max-width: 500px;
+}
+
+.frase-home {
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+}
+
+
+
