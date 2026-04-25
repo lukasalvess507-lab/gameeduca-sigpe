@@ -403,18 +403,13 @@ a {
   justify-content: center;
 }
 
-
-/* PADRONIZAR TAMANHO DOS BOTÕES */
-.card-btn {
-  height: 120px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 /* AJUSTE PARA CELULAR */
 @media (max-width: 600px) {
   .card-btn {
     height: 110px;
   }
+}
+
+.card-btn {
+  align-items: center;
 }
