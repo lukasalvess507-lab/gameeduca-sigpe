@@ -75,7 +75,9 @@ height: auto;
   }
 }
 
+
 /* camada branca */
+/*
 .container::before {
   content: "";
   position: absolute;
@@ -86,7 +88,7 @@ height: auto;
 
   z-index: 0;
 }
-
+*/
 .container * {
   position: relative;
   z-index: 1;
