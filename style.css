@@ -123,18 +123,18 @@ p {
 
 /* botão */
 .card-btn {
-    background: rgba(255, 255, 255, 0.25); /* transparência */
+    background: rgba(255, 255, 255, 0.35); /* mais visível */
 
-    backdrop-filter: blur(10px); /* efeito vidro */
-    -webkit-backdrop-filter: blur(10px); /* compatibilidade */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
 
     border-radius: 18px;
 
-    border: 1px solid rgba(255, 255, 255, 0.4); /* borda suave */
+    border: 1px solid rgba(255, 255, 255, 0.6); /* borda mais forte */
 
-    box-shadow: 
-        0 10px 25px rgba(0,0,0,0.25),
-        0 4px 10px rgba(0,0,0,0.15);
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.4),  /* sombra mais pesada */
+        0 5px 15px rgba(0,0,0,0.25);
 
     width: 100%;
     max-width: 200px;
@@ -152,13 +152,13 @@ p {
 }
 
 .card-btn:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px) scale(1.03);
 
-    background: rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.5);
 
-    box-shadow: 
-        0 15px 35px rgba(0,0,0,0.35),
-        0 6px 15px rgba(0,0,0,0.2);
+    box-shadow:
+        0 20px 45px rgba(0,0,0,0.5),
+        0 10px 25px rgba(0,0,0,0.3);
 }
 
 /* celular */
