@@ -359,3 +359,17 @@ p {
         height: 110px;
     }
 }
+
+@media (min-width: 1024px) {
+    .botoes-home {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .botoes-home .card-btn {
+        max-width: 180px;
+    }
+}
