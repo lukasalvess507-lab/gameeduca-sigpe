@@ -471,3 +471,26 @@ p {
     box-shadow: 0 20px 40px rgba(0,0,0,0.2);
   }
 }
+
+.pagina-interna .container {
+    position: relative;
+    overflow: hidden;
+}
+
+.pagina-interna .container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: url('logos/fundoplataforma.png') center/cover no-repeat;
+
+    filter: blur(12px);
+    transform: scale(1.1);
+
+    z-index: 0;
+}
+
+.pagina-interna .container * {
+    position: relative;
+    z-index: 1;
+}
