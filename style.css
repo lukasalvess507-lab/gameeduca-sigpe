@@ -329,3 +329,10 @@ p {
   }
 
 }
+
+/* aumentar apenas ícones da HOME */
+.botoes-home .card-btn img,
+.botoes-home .card-btn span {
+    width: 60px;
+    font-size: 60px;
+}
