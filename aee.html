@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEE - GameEduca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<a href="index.html" class="btn-voltar">voltar</a>
+    
+<div class="container">
+    <h2>Jogos - AEE</h2>
+    <p>Escolha um jogo para jogar</p>
+
+    <div class="botoes">
+
+        <a href="autismgames.html" class="card-btn">
+    <img src="logos/autismgames.png" width="40">
+<p>Autism Games</p>
+</a> 
+        
+        <a href="tutoriais-iniciais.html" class="card-btn destaque">
+  <span>🎥</span>
+  <p>Tutoriais</p>
+</a>
+
+    </div>
+
+</div>
+
+<script>
+  document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function(e) {
+      if (this.getAttribute("href").includes(".html")) {
+        e.preventDefault();
+        document.body.classList.add("fade-out");
+        setTimeout(() => {
+          window.location.href = this.href;
+        }, 60);
+      }
+    });
+  });
+</script>
+    
+</body>
+</html>
