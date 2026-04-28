@@ -489,3 +489,29 @@ p {
         flex-wrap: nowrap;
     }
 }
+
+
+/* 📱 CELULAR - SEM RETÂNGULO */
+@media (max-width: 768px) {
+    .botoes-home {
+        background: transparent !important;
+        backdrop-filter: none !important;
+        padding: 0 !important;
+        margin: 0 auto !important;
+    }
+}
+
+
+/* 💻 COMPUTADOR - COM RETÂNGULO */
+@media (min-width: 1024px) {
+    .botoes-home {
+        background: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(10px);
+
+        border-radius: 30px;
+        padding: 20px;
+        margin: 30px auto;
+
+        max-width: 900px;
+    }
+}
