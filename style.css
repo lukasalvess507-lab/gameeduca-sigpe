@@ -258,8 +258,8 @@ p {
 /* aumentar ícones só na home */
 .botoes-home .card-btn span,
 .botoes-home .card-btn img {
-  font-size: 40px;
-  width: 40px;
+  font-size: 80px;
+  width: 80px;
 }
 
 @media (max-width: 600px) {
