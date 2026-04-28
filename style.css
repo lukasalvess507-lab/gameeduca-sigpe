@@ -52,7 +52,7 @@ body {
 /* ================= CONTEÚDO ================= */
 .container {
   min-height: 100vh;
-height: auto;
+width: 100%;
   background: url('logos/fundo-tec-branco.png') no-repeat center;
   background-size: cover;
     background-position: center;
