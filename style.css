@@ -336,3 +336,11 @@ p {
     font-size: 85px;
     max-width: 100%;
 }
+
+@media (min-width: 1024px) {
+    .container {
+        background-size: contain;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+    }
+}
