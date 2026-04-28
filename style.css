@@ -344,3 +344,18 @@ p {
         background-repeat: no-repeat;
     }
 }
+
+@media (min-width: 1024px) {
+    .botoes-home {
+        display: flex;
+        flex-direction: row; /* vira linha */
+        justify-content: center;
+        flex-wrap: wrap; /* quebra linha se precisar */
+        gap: 30px;
+    }
+
+    .botoes-home .card-btn {
+        max-width: 180px; /* diminui só no PC */
+        height: 110px;
+    }
+}
