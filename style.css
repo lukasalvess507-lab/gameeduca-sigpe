@@ -53,7 +53,7 @@ body {
 .container {
   min-height: 100vh;
 height: auto;
-  background: url('logos/fundo-tec-branco.png') no-repeat center;
+  background: url('logos/fundogeral.png') no-repeat center;
   background-size: cover;
     background-position: center;
   padding: 60px 20px;
