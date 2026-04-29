@@ -512,3 +512,12 @@ p {
     }
 
 }
+
+/* 💻 DESCE OS BOTÕES (SÓ NO COMPUTADOR) */
+@media (min-width: 1024px) {
+
+    .botoes {
+        margin-top: 60px; /* 🔥 ajuste aqui */
+    }
+
+}
