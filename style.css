@@ -494,3 +494,21 @@ p {
     position: relative;
     z-index: 1;
 }
+
+/* 💻 FORÇA 5 BOTÕES EM LINHA (SÓ NO PC) */
+@media (min-width: 1024px) {
+
+    .botoes {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        flex-wrap: nowrap; /* 🔥 NÃO QUEBRA LINHA */
+    }
+
+    .card-btn {
+        width: 160px;
+        max-width: 160px;
+    }
+
+}
