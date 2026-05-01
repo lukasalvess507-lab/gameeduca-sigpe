@@ -497,20 +497,19 @@ p {
 
 /* 💻 FORÇA 5 BOTÕES EM LINHA (SÓ NO PC) */
 @media (min-width: 1024px) {
-
     .botoes {
-        display: flex !important;
-        justify-content: center;
-        align-items: center;
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr);
         gap: 25px;
-        flex-wrap: nowrap; /* 🔥 NÃO QUEBRA LINHA */
+        max-width: 900px;
+        margin: 40px auto;
+        justify-items: center;
     }
 
-    .card-btn {
-        width: 160px;
-        max-width: 160px;
+    .botoes .card-btn {
+        width: 180px;
+        height: 120px;
     }
-
 }
 
 /* 💻 DESCE OS BOTÕES (SÓ NO COMPUTADOR) */
