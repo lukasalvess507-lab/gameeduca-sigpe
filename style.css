@@ -496,8 +496,9 @@ p {
 }
 
 /* 💻 FORÇA 5 BOTÕES EM LINHA (SÓ NO PC) */
+/* SOMENTE páginas internas */
 @media (min-width: 1024px) {
-    .botoes {
+    .pagina-interna .botoes {
         display: grid !important;
         grid-template-columns: repeat(4, 1fr);
         gap: 25px;
@@ -506,17 +507,8 @@ p {
         justify-items: center;
     }
 
-    .botoes .card-btn {
+    .pagina-interna .botoes .card-btn {
         width: 180px;
         height: 120px;
     }
-}
-
-/* 💻 DESCE OS BOTÕES (SÓ NO COMPUTADOR) */
-@media (min-width: 1024px) {
-
-    .botoes {
-        margin-top: 60px; /* 🔥 ajuste aqui */
-    }
-
 }
